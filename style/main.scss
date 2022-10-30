@@ -1,0 +1,301 @@
+/*import normalize and fonts*/
+@import "normalize.css";
+@import url('https://fonts.googleapis.com/css2?family=Barlow&family=Kanit&family=Stick+No+Bills:wght@700&display=swap');
+
+/*SCSS was used mainly to keep track of all the colors and for practice*/
+@import 'variables.scss';
+
+html{
+    font-size: 100%;
+    font-family: $main-font;
+    background-image: url(https://images7.alphacoders.com/112/1128360.jpg);
+    background-color: $bg-main-color;
+    background-position: center;
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+/*assigning fonts*/
+h2,h3,h4{
+    font-family: $sub-header-font;
+}
+p, button, a{
+    font-family: $par-font;
+}
+a{
+    color:$link-color;
+}
+/*glass-like text box*/
+.glass{
+    background: $dark-transparent-background;
+    box-shadow: 0 4px 30px $dark-box-shadow;
+    backdrop-filter: blur(11.1px);
+    -webkit-backdrop-filter: blur(11.1px);
+    border: 1px solid rgba(255, 255, 255, 0);
+}
+/*header stuff*/
+.full-header{
+    background-position: center;
+    background-size: 100%;
+    height: 100vh;
+    position: relative;
+}
+#logo{
+    margin:9px 10px;
+    width: 50px;
+    position: absolute;
+}
+
+nav{
+    border-bottom: 1px solid $dull-cyan;
+    width: 100%;
+    position: fixed;
+    z-index: 2;
+}
+nav div{
+    text-align: right;
+}
+nav a{
+    display: inline-block;
+    color: $default-font-color;
+    text-decoration: none;
+    padding: 18px;
+    transition: 0.8s;
+    border-bottom: 1px solid rgba(255, 255, 255, 0);
+}
+nav a:hover{
+    border-bottom: 1px solid $dull-cyan;
+    text-shadow: 0 4px 50px $dull-cyan;
+    color: $big-title-color;
+}
+/*title*/
+#title{
+    margin: auto;
+    padding: 50px;
+    font-size: 3em;
+}
+#title h1{
+    margin:10% 0 0 0;
+}
+#small-title{
+    font-size: 0.5em;
+    color: $small-title-color;
+    text-shadow: 0 4px 30px $small-title-shadow-color;
+}
+#large-title{
+    font-size: 1.5em;
+    color: $big-title-color;
+    text-shadow: 0 4px 30px $big-title-shadow-color;
+    font-family: $title-font;
+}
+h2{
+    font-size: 2em;
+    color: $heading-color;
+    text-shadow: 0 4px 30px $heading-text-shadow-color;
+}
+/*city stat grid*/
+.grid-city-stat{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr;
+    position:absolute; 
+    bottom:0;
+    right:0;
+    padding:20px 60px;
+    text-align: center;
+    border-top: 2px solid $dull-cyan;
+    border-left: 2px solid $dull-cyan;
+    border-radius: 50px 0 0 0;    
+}
+.grid-city-stat img{
+    width: 45%;
+    margin-top: 10%;
+}
+.grid-city-stat h3{
+    margin:0;
+}
+/*statistics grid*/
+.grid-stat{
+    display: grid;
+    grid-template-columns:  1fr 1fr 1fr 1fr;
+    text-align: center;
+    grid-gap: 10px;
+}
+.grid-stat article{
+    border-bottom: 1px solid $margenta-border-color;
+    transition: 1s;
+}
+.grid-stat article:hover{
+    background-color: $dark-transparent-purple;
+    transition: 1s;
+}
+.grid-stat h3{
+    color: $bright-magenta;
+}
+/* responsive img*/
+img{
+    width: 100%;    
+}
+/*general*/
+body{
+    margin:0;
+    color:$default-font-color;
+    font-size: 1.5em;
+    transition:1s;
+}
+button{
+    margin-top: 20px;
+    padding: 20px;
+    color: $default-font-color;
+    border-color: $button-border-color;
+    background-color:transparent;
+    transition:1s;
+}
+button:hover{
+    cursor: pointer;
+    transform: scale(105%);
+    color: black;
+    background-color:$button-hover-bg;
+    box-shadow: 0 2px 30px $button-box-shadow-color;
+}
+article{
+    padding: 20px;
+}
+
+/*big text box*/
+.text-box{
+    /*border-radius: 10% 10% 0 0;*/
+    padding: 2em;
+}
+.center{
+    text-align: center;
+}
+/*gallery grid*/
+.grid-text-right{
+    display: grid;
+    grid-template-columns: 1fr .5fr;
+    grid-auto-flow: dense;
+}
+.grid-text-left{
+    display: grid;
+    grid-template-columns:  .5fr 1fr;
+    grid-auto-flow: dense;
+}
+.gallery-img{
+    height: 101%;
+    object-fit: cover;
+}
+.gallery-card{
+    background-image: $transparent-linear-gradient; 
+}
+.right{
+    grid-column: 2/3;
+    border-left: 1px solid $dull-cyan;
+    
+}
+.left{
+    border-right: 1px solid $dull-cyan;
+    
+}
+/*footer*/
+footer{
+    padding:20px 10%;
+}
+.grid-footer{
+    display: grid;
+    background: $footer-bg;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+footer p, h4{
+    margin: 0;
+    padding: 5px;
+}
+footer a{
+    color: $footer-font-color;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration:underline;
+}
+.long{
+    grid-column: 1/span 4;
+    text-align: center;
+}
+footer img{
+    width: 40px;
+}
+.align{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.note{
+    color: $note-color;
+}
+/*media query*/
+@media screen and (max-width:1000px){
+    body{
+        font-size: 1.1em;
+    }
+    .grid-stat{
+        grid-template-columns:  1fr 1fr;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .grid-text-right{
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-flow: dense;
+        border: 3px solid $dull-cyan;
+        border-radius: 25px;
+    }
+    .grid-text-left{
+        display: grid;
+        grid-template-columns: auto;
+        grid-auto-flow: dense;
+        border: 3px solid $dull-cyan;
+        margin:15px 0;
+        border-radius: 25px;
+    }
+    .grid-stat{
+        grid-template-columns:  1fr;
+    }
+    .gallery-img{
+        border-radius: 0 0 25px 25px;
+        height: 100%;
+    }
+    .gallery-card{
+        border-radius: 25px 25px 0 0;
+    }
+    .right{
+        grid-column: auto;
+        border: 0;
+    }
+    .left{
+        border: 0;
+    }
+    .long{
+        grid-column: auto;
+    }
+    .grid-footer{
+        grid-template-columns: 1fr;
+    }
+}
+@media screen and (max-width:500px){
+    #small-title{
+        font-size: 0.4em;
+    }
+    .grid-city-stat{
+        padding: 10px;
+    }
+}
+@media screen and (max-width:400px){
+    #title{
+        padding: 10px;
+    }
+    #logo{
+        width: 35px;
+        margin: 10px;
+    }
+}

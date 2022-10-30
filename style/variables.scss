@@ -1,0 +1,39 @@
+//------variables---------
+//general fonts
+$main-font:Verdana, Geneva, Tahoma, sans-serif;
+$sub-header-font:'Kanit', sans-serif;
+$par-font:'Barlow', sans-serif;
+
+//general colors
+$bg-main-color:rgba(19, 41, 51, 0.958);
+$default-font-color:white;
+$dark-box-shadow: rgba(0, 0, 0, 0.876);
+$dark-transparent-background:rgba(16, 22, 40, 0.606);
+$dull-cyan:rgb(14, 147, 187);
+$bright-magenta:rgb(250, 115, 255);
+$margenta-border-color:rgba(211, 38, 254, 0.724);
+$dark-transparent-purple:rgba(82, 35, 126, 0.512);
+$transparent-linear-gradient:linear-gradient(to right, rgba(28, 21, 83, 0.411), rgba(79, 17, 82, 0.347));
+$link-color: $dull-cyan;
+$note-color:rgba(109, 116, 116, 0.713);
+
+//title
+$big-title-color:rgb(67, 242, 255);
+$big-title-shadow-color:rgb(0, 193, 196);
+$title-font:'Stick No Bills', sans-serif;
+
+$small-title-color:rgba(255, 255, 255, 0.929);
+$small-title-shadow-color:rgba(255, 255, 255, 0.929);
+
+//heading
+$heading-color:rgb(6, 238, 255);
+$heading-text-shadow-color:rgba(5, 185, 225, 0.929);
+
+//button
+$button-border-color:rgb(255, 59, 255);
+$button-hover-bg:rgba(245, 76, 217, 0.796);
+$button-box-shadow-color:rgba(206, 36, 211, 0.855);
+
+//footer
+$footer-bg:rgba(2, 1, 3, 0.939);
+$footer-font-color:$link-color;
