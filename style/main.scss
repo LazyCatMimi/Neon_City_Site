@@ -8,12 +8,17 @@
 html{
     font-size: 100%;
     font-family: $main-font;
+}
+body{
+    margin:0;
+    color:$default-font-color;
+    font-size: 1.5em;
     background-image: url(https://images7.alphacoders.com/112/1128360.jpg);
     background-color: $bg-main-color;
-    background-position: center;
+    background-position: center top;
     background-size:cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    background-repeat: repeat;
+    background-attachment:fixed;
 }
 /*assigning fonts*/
 h2,h3,h4{
@@ -136,12 +141,6 @@ img{
     width: 100%;    
 }
 /*general*/
-body{
-    margin:0;
-    color:$default-font-color;
-    font-size: 1.5em;
-    transition:1s;
-}
 button{
     margin-top: 20px;
     padding: 20px;
