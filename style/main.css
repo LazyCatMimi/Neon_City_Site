@@ -10,8 +10,8 @@ html {
 body {
   margin: 0;
   color: white;
-  font-size: 1.5em;
-  background-image: url(https://images7.alphacoders.com/112/1128360.jpg);
+  font-size: 1.4em;
+  background-image: url(../assets/images/bg.jpg);
   background-color: rgba(19, 41, 51, 0.958);
   background-position: center top;
   background-size: cover;
@@ -20,16 +20,25 @@ body {
 }
 
 /*assigning fonts*/
-h2, h3, h4 {
+h2,
+h3,
+h4 {
   font-family: "Kanit", sans-serif;
 }
 
-p, button, a {
+p,
+button,
+a {
   font-family: "Barlow", sans-serif;
 }
 
 a {
   color: rgb(14, 147, 187);
+}
+
+/*make img as big as their container*/
+img {
+  width: 100%;
 }
 
 /*glass-like text box*/
@@ -49,20 +58,22 @@ a {
   position: relative;
 }
 
-#logo {
-  margin: 9px 10px;
+#logo img {
+  margin-left: 10px;
   width: 50px;
-  position: absolute;
 }
 
 nav {
   border-bottom: 1px solid rgb(14, 147, 187);
   width: 100%;
   position: fixed;
+  display: flex;
+  align-items: center;
   z-index: 2;
 }
 
-nav div {
+nav #links {
+  width: 100%;
   text-align: right;
 }
 
@@ -126,7 +137,7 @@ h2 {
 }
 
 .grid-city-stat img {
-  width: 45%;
+  width: 2em;
   margin-top: 10%;
 }
 
@@ -143,7 +154,7 @@ h2 {
 }
 
 .grid-stat article {
-  border-bottom: 1px solid rgba(211, 38, 254, 0.724);
+  border-bottom: 1px solid rgb(141, 66, 160);
   transition: 1s;
 }
 
@@ -153,12 +164,7 @@ h2 {
 }
 
 .grid-stat h3 {
-  color: rgb(250, 115, 255);
-}
-
-/* responsive img*/
-img {
-  width: 100%;
+  color: rgb(228, 99, 232);
 }
 
 /*general*/
@@ -166,7 +172,7 @@ button {
   margin-top: 20px;
   padding: 20px;
   color: white;
-  border-color: rgb(255, 59, 255);
+  border-color: rgb(239, 126, 243);
   background-color: transparent;
   transition: 1s;
 }
@@ -232,11 +238,14 @@ footer {
 
 .grid-footer {
   display: grid;
+  grid-gap: 25px 20px;
   background: rgba(2, 1, 3, 0.939);
-  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
 }
 
-footer p, h4 {
+footer p,
+h4 {
   margin: 0;
   padding: 5px;
 }
@@ -251,7 +260,7 @@ footer a:hover {
 }
 
 .long {
-  grid-column: 1/span 4;
+  grid-column: 1/span 3;
   text-align: center;
 }
 
@@ -260,14 +269,13 @@ footer img {
 }
 
 .align {
-  margin-top: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .note {
-  color: rgba(109, 116, 116, 0.713);
+  color: rgba(187, 197, 197, 0.713);
 }
 
 /*media query*/
@@ -326,13 +334,12 @@ footer img {
   .grid-city-stat {
     padding: 10px;
   }
+  #logo img {
+    width: 45px;
+  }
 }
 @media screen and (max-width: 400px) {
   #title {
     padding: 10px;
-  }
-  #logo {
-    width: 35px;
-    margin: 10px;
   }
 }/*# sourceMappingURL=main.css.map */
