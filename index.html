@@ -5,187 +5,195 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="style/main.css">
   <link rel="shortcut icon" href="assets/images/NElogoColor.png" />
+  <script type="text/javascript" src="js/script.js"></script>
 </head>
-<!--HEADER-->
-<header class="full-header">
-    <!--nav-->
-    <nav class="glass">
-        <div id="logo">
-            <img src="assets/images/NElogo.png" alt=""/>
-        </div>
-        <div id="links">
-            <a href="index.html">Home</a>
-            <a href="#">Map</a>
-            <a href="#">Events</a>
-            <a href="#">About</a>
-        </div>
-    </nav>
-    <!--title text-->
-    <div id="title">
-        <h1><span id="small-title">Welcome to</span><br><span id="large-title">NEON CITY.</span></h1>
-    </div>
-    <!--current city info-->
-    <div class="grid-city-stat glass">
-        <article>
-            <h3>DATE</h3>
-            <p>Nov-7-2136</p>
-        </article>
-        <article>
-            <h3>TIME</h3>
-            <p>18:27:45</p>
-        </article>
-        <article>
-            <h3>WEATHER</h3>
-            <img src="assets/images/moon_icon.png" alt="cloudy night"/>
-        </article>
-    </div>
 
-
-</header>
 
 <!--BODY-->
 <body>
-    <div class="glass">
-        <!--introduction-->
-        <article class="text-box">
-            <h2>NEON CITY: The City of the Future</h2>
-            <p>It's the city of the future, and it's here. Located on Mars, the atmosphere in Neon City is electric. This place is buzzing with activity at all hours of the day and night-and that's not just because of all the people. From the tallest buildings to the smallest streets, every inch of this city is packed with life and energy. The streets are teeming with life, and there's never a dull moment in the sky. Everyone gets to enjoy the high-tech life in this futuristic metropolis. The city attracts art lovers, fashionistas, sports fans, foodies, and techies who like to live life to the fullest. They come here because they want to experience something new every day and make their mark on this wonderful place.</p><br>
-            <!--city statistics-->
-            <h2>Statistics & Ranks</h2>
-            <div class="grid-stat">
-                <article class="glass">
-                    <p>Population</p>
-                    <h3>3,865,495,423</h3>
-                </article>
-                <article class="glass">
-                    <p>Avg Life Expectancy</p>
-                    <h3>186 Years Old</h3>
-                </article>
-                <article class="glass">
-                    <p>Median Age</p>
-                    <h3>63 Years Old</h3>
-                </article>
-                <article class="glass">
-                    <p>City Size</p>
-                    <h3>1,596 sq mi</h3>
-                </article>
-                <article class="glass">
-                    <p>Solar System State Council</p>
-                    <h3>#1 Largest City</h3>
-                </article>
-                <article class="glass">
-                    <p>Planetary Gov. Committee</p>
-                    <h3>#1 Tecnology</h3>
-                </article>
-                <article class="glass">
-                    <p>Planetary Gov. Committee</p>
-                    <h3>#2 Happiest Citizens</h3>
-                </article>
-                <article class="glass">
-                    <p>Planetary Gov. Committee</p>
-                    <h3>#3 Education</h3>
-                </article>
+        <!--HEADER-->
+    <header id="full-header">
+        <!--nav-->
+        <nav class="glass">
+            <div id="logo">
+                <img src="assets/images/NElogo.png" alt=""/>
             </div>
-        </article>
+            
+            <div id="links">
+                <a href="index.html">Home</a>
+                <a href="#">Map</a>
+                <a href="#">Events</a>
+                <a href="#">About</a>
+            </div>
+            <div class="menu-icon">
+                <img src="assets/images/menu-icon.png" alt="expand menu">
+            </div>
+            
+        </nav>
+        <!--title text-->
+        <div id="title">
+            <h1><span id="small-title">Welcome to</span><br><span id="large-title">NEON CITY.</span></h1>
+        </div>
+        <!--current city info-->
+        <div class="grid-city-stat glass">
+            <article>
+                <h3>DATE</h3>
+                <p id="date">mmm-dd-yyy</p>
+            </article>
+            <article>
+                <h3>TIME</h3>
+                <p id="time">hh:mm:ss</p>
+            </article>
+            <article>
+                <h3>WEATHER</h3>
+                <img src="assets/images/moon_icon.png" alt="cloudy night"/>
+            </article>
+        </div>
+    </header>
+
+    <!--MAIN CONTENT BEGINS-->
+    <main>
+        <div class="glass">
+            <!--introduction-->
+            <article class="text-box">
+                <h2>NEON CITY: The City of the Future</h2>
+                <p>It's the city of the future, and it's here. Located on Mars, the atmosphere in Neon City is electric. This place is buzzing with activity at all hours of the day and night-and that's not just because of all the people. From the tallest buildings to the smallest streets, every inch of this city is packed with life and energy. The streets are teeming with life, and there's never a dull moment in the sky. Everyone gets to enjoy the high-tech life in this futuristic metropolis. The city attracts art lovers, fashionistas, sports fans, foodies, and techies who like to live life to the fullest. They come here because they want to experience something new every day and make their mark on this wonderful place.</p><br>
+                <!--city statistics-->
+                <h2>Statistics & Ranks</h2>
+                <div class="grid-stat">
+                    <article class="glass">
+                        <p>Population</p>
+                        <h3>3,865,495,423</h3>
+                    </article>
+                    <article class="glass">
+                        <p>Avg Life Expectancy</p>
+                        <h3>186 Years Old</h3>
+                    </article>
+                    <article class="glass">
+                        <p>Median Age</p>
+                        <h3>63 Years Old</h3>
+                    </article>
+                    <article class="glass">
+                        <p>City Size</p>
+                        <h3>1,596 sq mi</h3>
+                    </article>
+                    <article class="glass">
+                        <p>Solar System State Council</p>
+                        <h3>#1 Largest City</h3>
+                    </article>
+                    <article class="glass">
+                        <p>Planetary Gov. Committee</p>
+                        <h3>#1 Tecnology</h3>
+                    </article>
+                    <article class="glass">
+                        <p>Planetary Gov. Committee</p>
+                        <h3>#2 Happiest Citizens</h3>
+                    </article>
+                    <article class="glass">
+                        <p>Planetary Gov. Committee</p>
+                        <h3>#3 Education</h3>
+                    </article>
+                </div>
+            </article>
+        
+            <!--features showcase-->
+            <h2 class="center">Features of NEON CITY</h2>
+            <!--feature 1-->
+            <div class="grid-text-right">
+                <article class="glass gallery-card right">
+                    <h3>Advanced Bullet&#8482; Transportation</h3>
+                    <p>The public transportation system, known as the Bullet&#8482; System, can go near the speed of light. Stretching for 1,000 miles, it allows for quick and easy travel between most points within our city limits. It is also connected to Neon City's neighboring cities.</p>
+                    <div class="center">
+                        <button>Bullet&#8482; Map &rarr;</button>
+                    </div>
+                </article>
+                <div>
+                    <img src="assets/images/feature1.jpg" class="gallery-img" alt="Bullet Metro Station">
+                </div>
+            </div>
     
-        <!--features showcase-->
-        <h2 class="center">Features of NEON CITY</h2>
-        <!--feature 1-->
-        <div class="grid-text-right">
-            <article class="glass gallery-card right">
-                <h3>Advanced Bullet&#8482; Transportation</h3>
-                <p>The public transportation system, known as the Bullet&#8482; System, can go near the speed of light. Stretching for 1,000 miles, it allows for quick and easy travel between most points within our city limits. It is also connected to Neon City's neighboring cities.</p>
-                <p class="note"><em>Photo by Michael Morris</em></p>
-                <div class="center">
-                    <button>Bullet&#8482; Map &rarr;</button>
+            <!--feature 2-->
+            <div class="grid-text-left">
+                <article class="glass gallery-card left">
+                    <h3>City and Sky</h3>
+                    <p>The city of Neon is home to a variety high-rise architecture that rises to the heavens. Destric, the tallest building in Neon City, is a magnificent structure with a huge public observation deck and offers visitors a unique opportunity to view the skies above them free of charge.</p>
+                    <div class="center">
+                        <button>Free Places &rarr;</button>
+                    </div>
+                </article>
+                <div>
+                    <img src="assets/images/feature2.jpg" class="gallery-img" alt="High place showing the city and night sky">   
                 </div>
-            </article>
-            <div>
-                <img src="assets/images/feature1.jpg" class="gallery-img" alt="Bullet Metro Station">
+            </div>
+    
+            <!--feature 3-->
+            <div class="grid-text-right">
+                <article class="glass gallery-card right">
+                    <h3>Buzzing City Center</h3>
+                    <p>Whether you're looking for a quick bite to eat or want to catch up with an old friend, there's always something going on. There are lots of restaurants and shops where you can get anything you want-or at least everything you need. If you don't know what something is called yet, we have translators who speak many languages so you can ask for help when needed.</p>
+                    <div class="center">
+                        <button>Down Town Popular Places &rarr;</button>
+                    </div>
+                </article>
+                <div>
+                    <img src="assets/images/feature3.jpg" class="gallery-img" alt="a busy downtown city center">
+                </div>
             </div>
         </div>
+    </main>
 
-        <!--feature 2-->
-        <div class="grid-text-left">
-            <article class="glass gallery-card left">
-                <h3>City and Sky</h3>
-                <p>The city of Neon is home to a variety high-rise architecture that rises to the heavens. Destric, the tallest building in Neon City, is a magnificent structure with a huge public observation deck and offers visitors a unique opportunity to view the skies above them free of charge.</p>
-                <p class="note"><em>Photo by Derek Weselake</em></p>
-                <div class="center">
-                    <button>Free Places &rarr;</button>
-                </div>
-            </article>
-            <div>
-                <img src="assets/images/feature2.jpg" class="gallery-img" alt="High place showing the city and night sky">   
-            </div>
+        <!--FOOTER-->
+    <footer class="glass grid-footer">
+        <h3 class="long"> Visit Neon City Today.</h3>
+        <div>
+            <h4>About</h3>
+            <a href="#">Contact Us</a>
+            <a href="#">About Us</a>
+            <a href="#">Careers</a>
         </div>
+        <div>
+            <h4>Places</h3>
+            <a href="#">Bullet Stations</a>
+            <a href="#">Free Places</a>
+            <a href="#">Down Town Popular Places</a>
+        </div>
+        <div>
+            <h4>Copyright</h3>
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms of Use</a>
+        </div>
+        <div>
+            <h4>Sources Doc and Page (working)</h3>
+            <a href="https://docs.google.com/document/d/1LyddXKNfWZHlVvLVyHztyQTpRBqxj55oEoBa98IBdEo/edit?usp=sharing" target="_blank">Sources Document</a>
+            <a href="sources.html">Pictures and Icons Used</a>
+        </div>
+        <div>
+            <h4>Images Credits (working)</h3>
+            <a target="_blank" href="https://www.pexels.com/photo/buildings-under-black-sky-3337211/">Background: Buildings Under Black Sky by Mo Eid</a>
+            <a target="_blank" href="https://www.wombo.art/listing/eeb30095-0bb6-4e15-9ee6-9ecf2808cd94">Train: WOMBO generated art</a>
+            <a target="_blank" href="https://www.wombo.art/listing/fab73257-910b-47ba-8f6e-37b0d0c1cdd7">City & Sky: WOMBO generated art</a>
+            <a target="_blank" href="https://www.wombo.art/listing/587a04d6-f16c-49ba-89db-71eb76eaf286">City Center: WOMBO generated art</a>
+        </div>
+        <div>
+            <h4>Icons Used (working)</h3>
+                <a target="_blank" href="https://icons8.com/icon/3317/night">Night icon by Icons8</a>
+        
+                <a target="_blank" href="https://icons8.com/icon/12463/reddit">Reddit icon by Icons8</a>
+        
+                <a target="_blank" href="https://icons8.com/icon/118468/facebook">Facebook icon by Icons8</a>
 
-        <!--feature 3-->
-        <div class="grid-text-right">
-            <article class="glass gallery-card right">
-                <h3>Buzzing City Center</h3>
-                <p>Whether you're looking for a quick bite to eat or want to catch up with an old friend, there's always something going on. There are lots of restaurants and shops where you can get anything you want-or at least everything you need. If you don't know what something is called yet, we have translators who speak many languages so you can ask for help when needed.</p>
-                <p class="note"><em>Photo by Derek Weselake</em></p>
-                <div class="center">
-                    <button>Down Town Popular Places &rarr;</button>
-                </div>
-            </article>
-            <div>
-                <img src="assets/images/feature3.jpg" class="gallery-img" alt="a busy downtown city center">
-            </div>
+                <a target="_blank" href="https://icons8.com/icon/32292/instagram">Instagram icon by Icons8</a>
         </div>
-    </div>
+        
+        <div class="long align">
+            <h4>Follow us: </h3>
+                <img src="assets/images/social-fb.png" alt="facebook link">
+                <img src="assets/images/social-insta.png" alt="instagram link">
+                <img src="assets/images/social-reddit.png" alt="reddit link">
+        </div>
+        <p class="long note">Site by @Quynh Vo</p>
+    </footer>
 </body>
-<!--FOOTER-->
-<footer class="glass grid-footer">
-    <h3 class="long"> Visit Neon City Today.</h3>
-    <div>
-        <h4>About</h3>
-        <a href="#"><p>Contact Us</p></a>
-        <a href="#"><p>About Us</p></a>
-        <a href="#"><p>Careers</p></a>
-    </div>
-    <div>
-        <h4>Places</h3>
-        <a href="#"><p>Bullet Stations</p></a>
-        <a href="#"><p>Free Places</p></a>
-        <a href="#"><p>Down Town Popular Places</p></a>
-    </div>
-    <div>
-        <h4>Copyright</h3>
-        <a href="#"><p>Privacy Policy</p></a>
-        <a href="#"><p>Terms of Use</p></a>
-    </div>
-    <div>
-        <h4>Sources Doc and Page (working)</h3>
-        <a href="https://docs.google.com/document/d/1LyddXKNfWZHlVvLVyHztyQTpRBqxj55oEoBa98IBdEo/edit?usp=sharing" target="_blank"><p>Sources Document</p></a>
-        <a href="sources.html"><p>Pictures and Icons Used</p></a>
-    </div>
-    <div>
-        <h4>Images Credits (working)</h3>
-        <a target="_blank" href="https://wall.alphacoders.com/big.php?i=1128360"><p>Aerial View of a Neon Cyberpunk City by Toni Bratincevic</p></a>
-        <a target="_blank" href="https://wall.alphacoders.com/big.php?i=883448"><p>Welcome to L.A. Metro by Michael Morris</p></a>
-        <a target="_blank" href="https://wall.alphacoders.com/big.php?i=857387"><p>Sci Fi City Wallpaper by Derek Weselake</p></a>
-        <a target="_blank" href="https://wall.alphacoders.com/big.php?i=857596"><p>Sci Fi City HD Wallpaper by Derek Weselake</p></a>
-    </div>
-    <div>
-        <h4>Icons Used (working)</h3>
-            <a target="_blank" href="https://icons8.com/icon/3317/night"><p>Night icon by Icons8</p></a>
-    
-            <a target="_blank" href="https://icons8.com/icon/12463/reddit"><p>Reddit icon by Icons8</p></a>
-    
-            <a target="_blank" href="https://icons8.com/icon/118468/facebook"><p>Facebook icon by Icons8</p></a>
 
-            <a target="_blank" href="https://icons8.com/icon/32292/instagram" style="width:50px"><p>Instagram icon by Icons8</p></a>
-    </div>
-    
-    <div class="long align">
-        <h4>Follow us: </h3>
-            <img src="assets/images/social-fb.png" alt="facebook link">
-            <img src="assets/images/social-insta.png" alt="instagram link">
-            <img src="assets/images/social-reddit.png" alt="reddit link">
-    </div>
-    <p class="long note">Site by @Quynh Vo</p>
-</footer>
 
 </html>
